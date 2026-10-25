@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8F0">
+  <title>FOODPICKER ITF — วันนี้กินอะไรดี?</title>
+  <meta name="description" content="กดสุ่มเมนูอาหารไทยจานโปรดได้ทันที พร้อมรูปภาพ คำอธิบาย และราคาโดยประมาณครบในหน้าเดียว">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="FOODPICKER ITF กลับขึ้นด้านบน">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" focusable="false">
+            <path d="M6.5 14.5h19c0 6.1-4.3 9.8-9.5 9.8s-9.5-3.7-9.5-9.8Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M12.5 10.2c0-1.7 1.7-1.8 1.7-3.4M18 10.2c0-1.7 1.7-1.8 1.7-3.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 27h24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">FOODPICKER <span class="brand-itf">ITF</span></span>
+          <span class="brand-tagline">Random food generator</span>
+        </span>
+      </a>
+
+      <div class="header-side">
+        <div class="nav-meta" role="group" aria-label="ข้อมูลโปรเจกต์">
+          <span class="nav-id"><span class="nav-id-label">ID</span> 69070007</span>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <span class="week-badge">WEEK 17</span>
+        </div>
+
+        <button class="shuffle-button" type="button" data-random aria-label="สุ่มเมนูอาหาร" title="สุ่มเมนูอาหาร">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="m4 4 5 5"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="randomizer" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="intro">
+          <p class="kicker">
+            <span class="kicker-line" aria-hidden="true"></span>
+            Food discovery · ITF edition
+          </p>
+          <h1 class="hero-title" id="hero-title"><span>What are we</span> <span>eating <em>today?</em></span></h1>
+          <p class="intro-text">ไม่ต้องคิดนาน กดสุ่มแล้วดูรายละเอียดเมนูที่คุณได้เลย</p>
+        </div>
+
+        <article class="picker-card" id="featured-card" aria-labelledby="featured-name" aria-busy="false">
+          <div class="picker-media">
+            <img
+              id="featured-image"
+              src="assets/images/khao-man-gai.jpg"
+              width="1200"
+              height="900"
+              alt="ข้าวมันไก่ ไก่ต้มนุ่มฉ่ำ เสิร์ฟพร้อมข้าวมันหอม น้ำจิ้ม และน้ำซุป"
+              fetchpriority="high"
+              decoding="async">
+            <span class="picker-ribbon">
+              <span class="ribbon-dot" aria-hidden="true"></span>
+              Today's pick
+            </span>
+            <span class="picker-counter" aria-hidden="true">
+              <span id="featured-counter-current">01</span>
+              <span class="counter-total">/ 12</span>
+            </span>
+          </div>
+
+          <div class="picker-body">
+            <div class="picker-eyebrow-row">
+              <p class="picker-eyebrow">
+                <span class="live-dot" aria-hidden="true"></span>
+                Your random menu
+              </p>
+              <span class="picker-time" id="pick-time">พร้อมเสิร์ฟ</span>
+            </div>
+
+            <h2 class="picker-name" id="featured-name">ข้าวมันไก่</h2>
+            <p class="picker-description" id="featured-description">ไก่ต้มนุ่มฉ่ำ เสิร์ฟบนข้าวหุงมันหอม ๆ พร้อมน้ำจิ้มเต้าเจี้ยวรสกลมกล่อมและน้ำซุปอุ่น ๆ ที่ช่วยให้ทุกคำอร่อยขึ้น</p>
+
+            <div class="tag-row" id="featured-tags">
+              <span class="tag is-category">ข้าวจานเดียว</span>
+              <span class="tag">คลาสสิก</span>
+              <span class="tag">ไก่ฉ่ำ</span>
+              <span class="tag">ไม่เผ็ด</span>
+            </div>
+
+            <div class="picker-bottom">
+              <div class="price-block">
+                <span class="price-label">ราคาโดยประมาณ</span>
+                <p class="price"><span class="currency">฿</span><span id="featured-price">60</span></p>
+              </div>
+              <button class="btn btn-primary btn-random" type="button" data-random>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="m4 4 5 5"/>
+                </svg>
+                <span>สุ่มเมนูใหม่</span>
+              </button>
+            </div>
+
+            <p class="picker-hint">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3Z"/>
+              </svg>
+              กดสุ่มได้ไม่จำกัด · ไม่ซ้ำเมนูเดิมติดกัน
+            </p>
+          </div>
+        </article>
+
+        <p class="pool-note"><span aria-hidden="true">✦</span> สุ่มจาก 12 เมนูไทยคัดสรร</p>
+        <noscript>
+          <p class="no-script">กรุณาเปิดใช้งาน JavaScript เพื่อใช้ฟังก์ชันสุ่มอาหาร</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <p class="copyright">© <span id="copyright-year">2026</span> FOODPICKER ITF</p>
+        <p class="footer-id">Student ID 69070007 · WEEK 17</p>
+      </div>
+
+      <details class="credits">
+        <summary>เครดิตภาพอาหาร · Image credits <span aria-hidden="true">+</span></summary>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Kraphao_mu_khai_dao.jpg" target="_blank" rel="noopener noreferrer">ข้าวกะเพราหมูสับ</a> — Takeaway · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Hainanese_chicken_rice_at_Thai_Ten.jpg" target="_blank" rel="noopener noreferrer">ข้าวมันไก่</a> — Peachyeung316 · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Thai_Style_Minced_Pork_Fried_Rice_in_Hong_Kong.jpg" target="_blank" rel="noopener noreferrer">ข้าวผัดหมู</a> — Ceeseven · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Pad_Thai_Noodles_-_Little_Thai,_Brighton_2024-03-21.jpg" target="_blank" rel="noopener noreferrer">ผัดไทย</a> — Andy Li · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Common_local_Thai_food._50%E0%B8%BF_(baht)_%3D_$1.50_(pork)_noodle_soup_in_Phuket,_Thailand.jpg" target="_blank" rel="noopener noreferrer">ก๋วยเตี๋ยวหมูน้ำใส</a> — Sharon Hahn Darlin · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Khao_kha_moo_thailand.jpg" target="_blank" rel="noopener noreferrer">ข้าวขาหมู</a> — Amin · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Khao_mu_daeng.jpg" target="_blank" rel="noopener noreferrer">ข้าวหมูแดง</a> — Takeaway · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Khao_khaichiao_(omelette_with_rice),_Bangkok,_2018-05-15.jpg" target="_blank" rel="noopener noreferrer">ข้าวไข่เจียว</a> — Bitterschoko · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:DFC_5103_Shrimp_fried_rice_served_with_lime_sliced_cucumber_and_a_side_of_spicy_chili_sauce_-_a_classic_Thai_comfort_dish_from_Pattaya.jpg" target="_blank" rel="noopener noreferrer">ข้าวผัดกุ้ง</a> — PattayaPatrol · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Somtam_kaiyang_khaoniaow.jpg" target="_blank" rel="noopener noreferrer">ส้มตำ + ไก่ย่าง</a> — Takeaway · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Kuaitiao_phat_si-io_Phuket.jpg" target="_blank" rel="noopener noreferrer">ผัดซีอิ๊วหมู</a> — Dennis Wong · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Tom_yam_kung_1.jpg" target="_blank" rel="noopener noreferrer">ต้มยำกุ้ง</a> — Vee Satayamas · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></li>
+        </ul>
+        <p>ภาพทั้งหมดจาก Wikimedia Commons ถูกย่อขนาดและครอบตัดเพื่อการแสดงผล โดยยังคงอยู่ภายใต้ใบอนุญาตของเจ้าของผลงานแต่ละราย</p>
+      </details>
+    </div>
+  </footer>
+
+  <p class="sr-only" id="live-status" aria-live="polite" aria-atomic="true"></p>
+  <script src="script.js"></script>
+</body>
+</html>

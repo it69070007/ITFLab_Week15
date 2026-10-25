@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="ไม่สามารถแสดงรูปภาพอาหารได้">
+  <defs>
+    <linearGradient id="fallbackBg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF8F0"/>
+      <stop offset="1" stop-color="#FFE3E3"/>
+    </linearGradient>
+    <linearGradient id="fallbackBowl" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#E63946"/>
+      <stop offset="1" stop-color="#A4161A"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#fallbackBg)"/>
+  <circle cx="400" cy="285" r="220" fill="none" stroke="#E63946" stroke-width="2" stroke-dasharray="4 14" opacity=".35"/>
+  <circle cx="400" cy="285" r="185" fill="#FFFFFF" opacity=".72"/>
+  <path d="M215 285h370c0 111-82.8 180-185 180s-185-69-185-180Z" fill="#FFFFFF" stroke="url(#fallbackBowl)" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M330 213c0-30 30-26 30-58M400 213c0-30 30-26 30-58M470 213c0-30 30-26 30-58" fill="none" stroke="#A4161A" stroke-width="12" stroke-linecap="round" opacity=".55"/>
+  <path d="M255 228c30-20 74-30 116-30M545 253c-14 16-30 27-49 36" fill="none" stroke="#E63946" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+  <circle cx="300" cy="335" r="13" fill="#E63946" opacity=".75"/>
+  <circle cx="500" cy="322" r="9" fill="#A4161A" opacity=".5"/>
+  <text x="400" y="525" fill="#777777" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="6" text-anchor="middle">IMAGE UNAVAILABLE</text>
+  <text x="400" y="555" fill="#A4161A" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" text-anchor="middle">FOODPICKER ITF</text>
+</svg>
